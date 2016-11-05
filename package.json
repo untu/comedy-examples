@@ -1,0 +1,19 @@
+{
+  "name": "comedy-examples",
+  "version": "0.0.1",
+  "description": "Comedy Framework usage examples.",
+  "dependencies": {
+    "comedy": "*"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/untu/comedy-examples.git"
+  },
+  "author": "Untu Inc.",
+  "license": "EPL-1.0",
+  "bugs": {
+    "url": "https://github.com/untu/comedy-examples/issues"
+  },
+  "homepage": "https://github.com/untu/comedy-examples#readme"
+}
