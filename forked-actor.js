@@ -8,7 +8,7 @@ var actors = require('comedy');
 class MyActor {
   sayHello(to) {
     // Reply with a message, containing self PID.
-    return `Hello ${to} from ${process.pid}!`;
+    return `Hello to ${to} from ${process.pid}!`;
   }
 }
 
@@ -26,4 +26,3 @@ actorSystem
     console.log(`Actor replied: ${reply}`);
   })
   .finally(() => actorSystem.destroy());
-
