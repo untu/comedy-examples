@@ -16,13 +16,14 @@ class MyActor {
 var actorSystem = actors();
 
 actorSystem
-  // Get a root actor reference.
+// Get a root actor reference.
   .rootActor()
-  // Create a class-defined child actor, that is run in a separate process (forked mode).
-  .then(rootActor => rootActor.createChild(MyActor, { mode: 'forked' }))
-  // Send a message to our forked actor with a self process PID.
+  // Create a class-defined child actor, that is run on a remote machine (remote mode).
+  .then(rootActor => rootActor.createChild(MyActor, { mode: 'remote', host: '192.168.33.20' }))
+  // Send a message to our remote actor with a self process PID.
   .then(myActor => myActor.sendAndReceive('sayHello', process.pid))
   .then(reply => {
+    // Output result.
     console.log(`Actor replied: ${reply}`);
   })
   // Log errors.
