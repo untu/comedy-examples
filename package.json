@@ -7,7 +7,11 @@
     "comedy": "*",
     "mongodb": "2.2.21"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "4.4.0",
+    "eslint-config-google": "0.6.0",
+    "eslint-plugin-jsdoc": "2.3.1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/untu/comedy-examples.git"
