@@ -14,6 +14,8 @@ class PrimeFinderActor {
    * @returns {Number} Prime number next to n.
    */
   nextPrime(n) {
+    if (n < 1) throw new Error('Illegal input');
+
     const n0 = n + 1;
 
     if (this._isPrime(n0)) return n0;
