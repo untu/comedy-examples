@@ -70,6 +70,7 @@ class RestServerActor {
     // Set 10 minutes response timeout.
     server.server.setTimeout(60000 * 10);
 
+    // Define REST method for prime number search.
     server.get('/next-prime/:n', (req, res, next) => {
       this.log.info(`Handling next-prime request for number ${req.params.n}`);
 
