@@ -9,7 +9,7 @@ var myActorPromise = actorSystem
   .then(rootActor => {
     return rootActor.createChild({ // Create a child actor that says hello.
       sayHello: to => {
-        console.log(`Hello, ${to}!`)
+        console.log(`Hello, ${to}!`);
       }
     });
   });
