@@ -6,7 +6,8 @@
     "bluebird": "3.4.6",
     "comedy": "*",
     "mongodb": "2.2.21",
-    "restify": "5.0.1"
+    "restify": "5.0.1",
+    "bunyan": "^1.8.12"
   },
   "devDependencies": {
     "eslint": "4.4.0",
